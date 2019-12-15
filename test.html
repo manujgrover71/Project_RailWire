@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title></title>
+    </head>
+    <body>
+
+
+
+        <div class="meta">
+            <h1>Log In</h1><br>
+            <input type="email" placeholder="email" id="email">
+            <input type="password" placeholder="password" id="pass">
+            <button onclick="writeData()">summit</button>
+        </div>
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDDcJXG5Wb2Z0ZuHji33S-8vi7nxrezG9w",
+    authDomain: "railwire-78824.firebaseapp.com",
+    databaseURL: "https://railwire-78824.firebaseio.com",
+    projectId: "railwire-78824",
+    storageBucket: "railwire-78824.appspot.com",
+    messagingSenderId: "188254581995",
+    appId: "1:188254581995:web:0be1d5ae99f067213e7aae"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+        function writeData(){
+              firebase.database().ref("users/").set({
+                  email: "dsasda",
+                  pass: "dsad"
+              });
+          }
+
+      </script>
+    </body>
+</html>

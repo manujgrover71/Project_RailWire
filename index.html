@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RailWire</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+        <script src="javascript/index.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+        <link rel="stylesheet" href="/css/master.css">
+    </head>
+    <body>
+
+            <div class="top-level">
+                <div class="main-div" id="login_div">
+                    <h1 style="text-align:center;">Log In</h1>
+
+                    <input type="email" placeholder="Email" id="email_field">
+                    <input type="password" placeholder="Password" id="pass_field">
+
+                    <button id="sumit" onclick="sendData()">Login to Account.</button>
+                </div>
+
+            </div>
+            <div class="image-box">
+                    <img src="img/tr1.jpg"  style="width:1000px;height:600px;">
+            </div>
+
+            <script>
+
+                  var firebaseConfig = {
+                    apiKey: "AIzaSyDGw5yY_yq9aZ3OcKKDrcZ7M69tEwVq7y8",
+                    authDomain: "text-3e70a.firebaseapp.com",
+                    databaseURL: "https://text-3e70a.firebaseio.com",
+                    projectId: "text-3e70a",
+                    storageBucket: "text-3e70a.appspot.com",
+                    messagingSenderId: "836049886398",
+                    appId: "1:836049886398:web:4eac55d0cb6cda783e92ef"
+                  };
+                  firebase.initializeApp(firebaseConfig);
+
+            </script>
+
+    </body>
+</html>
